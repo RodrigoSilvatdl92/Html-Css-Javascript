@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo Guess Number</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <header>
+        <div class="header">
+            <input type="button" value="Inicio" class="button inicio">
+            <p id="paragrafoHeader">(Numero entre 1 e 100)</p>
+        </div>
+        <p class="advinha">Adivinha o Numero!</p>
+        <p class="numeroSecreto">?</p>
+    </header>
+    <p id="tentativas">(Tens 20 tentativas!)</p>
+    <main>
+        
+    <section class="left">
+        <input type="text" id="numeroProposta" >
+        <input type="button" class="button verificar" value="Verificar!">
+    </section>
+    <section class="right">
+        <p class="mensagem">☘ Tente advinhar o numero...</p>
+        <p class="score">Score:20</p>
+        <p class="melhorScore">🥇Highscore:0</p>
+    </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

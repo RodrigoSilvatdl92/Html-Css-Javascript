@@ -1,0 +1,141 @@
+@charset "UTF-8";
+
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing:border-box;
+    font-family: 'VT323', monospace;
+}
+
+body{
+    background-color:#292828;
+}
+
+/* header*/
+header{
+    border-bottom:3px solid white;
+}
+
+div.header{
+    max-width:1200px;
+    margin:30px auto;
+    display:flex;
+    justify-content: space-between;
+}
+
+.button{
+    width:140px;
+    height:60px;
+    color:white;
+    font-size:20px;
+    background-color:darkgrey;
+    border:0px;
+       
+}
+
+.button:hover{
+    background-color:lightgrey;
+    cursor: pointer;
+}
+
+#paragrafoHeader{
+    height:50px;
+    line-height:50px;
+    font-size:30px;
+    color:white;
+}
+
+.advinha{
+    font-size:70px;
+    text-align:center;
+    color:white;
+    margin:50px;
+}
+.numeroSecreto{
+    text-align:center;
+    font-size:80px;
+    background-color:darkgrey;
+    width:150px;
+    height:100px;
+    line-height:100px;
+    margin:auto;
+    position:relative;
+    top:50px;
+    color:white;
+    
+}
+
+/*corpo do jogo*/
+main{
+    max-width:1200px;
+    display:flex;
+    justify-content: space-around;
+    margin:80px auto;
+
+}
+
+#tentativas{
+    text-align:center;
+    font-size:50px;
+    color:white;
+    margin-top:100px;
+}
+
+
+/*secção da esquerda*/
+.left{
+    width:500px;
+    height:500px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+#numeroProposta{
+    width:200px;
+    height:150px;
+    background-color:#292828;
+    border:5px solid white;
+    margin-bottom:20px;
+    font-size:70px;
+    color:white;
+    text-align:center;
+
+}
+
+
+/*secção da direita*/
+.right{
+    width:500px;
+    height:500px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.mensagem{
+    color:white;
+    font-size:20px;
+    margin-bottom:20px;
+    height:30px;
+    line-height: 30px;
+}
+
+.score{
+    color:white;
+    font-size:20px;
+    margin-bottom:20px;
+    height:30px;
+    line-height: 30px;
+}
+
+.melhorScore{
+    color:white;
+    font-size:20px;
+    margin-bottom:20px;
+    height:30px;
+    line-height: 30px;
+}
