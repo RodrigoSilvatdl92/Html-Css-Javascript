@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Bankist</title>
+</head>
+<body>
+        <!-- TOP NAVIGATION -->
+    <nav>
+        <p class="welcome">Log in to get started</p>
+        <img src="logo.png" alt="icon" class="logo">
+        <form>
+            <input type="text" class="login_input login_input--user" placeholder="user">
+            <input type="password" class="login_input login_input--pin" placeholder="PIN" maxlength="4">
+            <button class="btn_login">&rarr;</button>
+        </form>
+    </nav>
+
+    <!-- APP -->
+    <main class="app">
+        <!-- balance -->
+        <div class="balance">
+            <div>
+            <p class="balance_text">Current Balance</p>
+            <p>As of <span class="balance_date">xx/xx/xxxx</span></p>
+            </div>
+            <div>
+                <p class="balance_value">25000</p>
+            </div>
+        </div>
+        <!-- Movements -->
+
+        <div class="movements">
+            <div class="movements_row" >
+                <p class="movements_type movements_type--deposit">2 Deposited</p>
+                <p class="movements_date">xx/xx/xxxx</p>
+                <p class="movements_value">5000</p>
+            </div>
+            <div class="movements_row" >
+                <p class="movements_type movements_type--withdrawal">1 Withdrawal</p>
+                <p class="movements_date">xx/xx/xxxx</p>
+                <p class="movements_value">5000</p>
+            </div>
+        </div>
+
+        <!-- Operations -->
+
+        <!-- Transfer -->
+
+        <div class="operation operation_transfer">
+            <p>Transfer Money</p>
+            <form class="form form_transfer">
+                <input type="text" class="form_input form_input--to">
+                <input type="text" class="form_input form_input--value">
+                <button class="btn_operations btn_operations--transfer">&rarr;</button>
+                <label class="form__label">Transfer to</label>
+                <label class="form__label">Amount</label>
+            </form>
+        </div>
+
+        <!-- Loan -->
+
+        <div class="operation operation_loan">
+            <p>Loan Money</p>
+            <form class="form form_loan">
+                <input type="number" class="form_input form_input--loan--amount">
+                <button class="btn_operations btn_operations--loan">&rarr;</button>
+                <label class="form__label_loan">Amount</label>
+            </form>
+        </div>
+
+         <!-- Close Account -->
+
+
+        <div class="operation operation_close">
+            <p>Close Account</p>
+            <form class="form form_close">
+                <input type="text" class="form_input form_input--close--user">
+                <input type="password" class="form_input form_input--close--pin">
+                <button class="btn_operations btn_operations--close">&rarr;</button>
+                <label class="form__label">Confirm User</label>
+                <label class="form__label">Confirm Pin</label>
+            </form>
+        </div>
+
+        <!-- Summary -->
+
+      <div class="summary">
+        <p class="summary__label">In</p>
+        <p class="summary__value summary__value--in">0000€</p>
+        <p class="summary__label">Out</p>
+        <p class="summary__value summary__value--out">0000€</p>
+        <p class="summary__label">Interest</p>
+        <p class="summary__value summary__value--interest">0000€</p>
+        <button class="btn--sort">&downarrow; SORT</button>
+      </div>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
